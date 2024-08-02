@@ -7,24 +7,24 @@
 <h1>Factory</h1>
 
 <h4>Engineers</h4>
-@if (Model["engineers"].Count == 0)
+@if (ViewBag.Engineers.Count == 0)
 {
   <p>No items have been added yet!</p>
 } 
 <ul>
-  @foreach (Engineer engineer in Model["engineers"])
+  @foreach (Engineer engineer in ViewBag.Engineers)
   {
     <li>@Html.ActionLink(engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId })</li>
   }
 </ul>
 
 <h4>Machines</h4>
-@if (Model["machines"].Count == 0)
+@if (ViewBag.Machines.Count == 0)
 {
   <p>No items have been added yet!</p>
 } 
 <ul>
-  @foreach (Machine machine in Model["machines"])
+  @foreach (Machine machine in ViewBag.Machines)
   {
     <li>@Html.ActionLink(machine.Name, "Details", "Machines", new { id = machine.MachineId })</li>
   }
