@@ -16,8 +16,8 @@ namespace Factory.Controllers
 		[HttpGet("/")]
 		public ActionResult Index()
 		{
-			ViewBag.categories = _db.Machines.ToList();
-			ViewBag.items = _db.Engineers.ToList();
+			ViewBag.machines = _db.Machines.ToList();
+			ViewBag.engineers = _db.Engineers.ToList();
 			return View();
 		}
 		
