@@ -10,15 +10,15 @@
 {
   @Html.LabelFor(model => model.Name);
   @Html.TextBoxFor(model => model.Name);
-  <p>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger fw-bold"})</p>
+  <p>@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger fw-bold" })</p>
 
   @Html.LabelFor(model => model.Attitude);
   @Html.TextBoxFor(model => model.Attitude);
-  <p>@Html.ValidationMessageFor(model => model.Attitude, "", new { @class = "text-danger fw-bold"})</p>
+  <p>@Html.ValidationMessageFor(model => model.Attitude, "", new { @class = "text-danger fw-bold" })</p>
 
   @Html.LabelFor(model => model.YearsWorked, "Years of experience");
   @Html.TextBoxFor(model => model.YearsWorked, new { @type = "number" });
-  <p>@Html.ValidationMessageFor(model => model.Attitude, "", new { @class = "text-danger fw-bold"})</p>
+  <p>@Html.ValidationMessageFor(model => model.YearsWorked, "", new { @class = "text-danger fw-bold" })</p>
   
   <input type="submit" value="Add new engineer">
 }
